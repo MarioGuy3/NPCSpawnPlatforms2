@@ -93,9 +93,17 @@ npcspawner = {
         debug       = 1,
     };
 };
--- Stuff that required ep1/ep2 to be mounted
-if (util.IsValidModel("models/hunter.mdl")) then
+-- Stuff that required ep1/ep2/hl1 to be mounted
+if (util.IsValidModel("models,/hunter.mdl")) then
     npcspawner.npcs["npc_hunter"] = "Hunter";
 end if (util.IsValidModel("models/zombie/zombie_soldier.mdl")) then
     npcspawner.npcs["npc_zombine"] = "Zombine";
+end if (util.IsValidModel("models/hgrunt.mdl")) then
+    npcspawner.npcs["monster_human_grunt"] = "HECU Soldier";
+end if (util.IsValidModel("models/hl1bar.mdl")) then
+    npcspawner.npcs["monster_barney"] = "Security Guard";
+end if (util.IsValidModel("models/scientist.mdl")) then
+    npcspawner.npcs["monster_scientist"] = "Scientist";
+end if (util.IsValidModel("models/agrunt.mdl")) then
+    npcspawner.npcs["monster_alien_grunt"] = "Alien Grunt";
 end
